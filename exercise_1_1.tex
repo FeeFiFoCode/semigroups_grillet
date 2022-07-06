@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amssymb}
+\begin{document}
+
+\section{Empty Set as a Semigroup}
+\subsection{Claim}
+Let $S$ be the empty set.
+Let $f$ be the binary operator on $S$.
+Then $(S,f)$ forms a semigroup.
+\subsection{Proof}
+As $S = \emptyset$ the domain and codomain of $f$ are empty.
+So it is vacuously true that $f$ is associative regarding $S$.
+$\square$
+
+
+\section{Groups are Semigroups}
+\subsection{Claim}
+Let $(G,f)$ be a group.
+Then $(G,f)$ is also a semi-group.
+\subsection{Proof}
+By definition of a group, $f$ must be a closed, associative, binary operator. Thus the pair forms a semim-group.
+$\square$
+
+
+\section{Constant Map constitutes a Semigroup}
+\subsection{Claim}
+Let $S$ be any non-empty set.
+Let the binary operator $f : S \times S \to S$ be a constant map.
+Then $(S,f)$ forms a semigroup.
+\subsection{Proof}
+Since $f$ is a constant map, it's output is fixed.
+Denote that output $c$.
+When $f$ acts on any pair in $S$ it always yields $c$.
+For any fixed, but arbitrary $x,y \in S$, even $f(x,c) = f(c,y) = c$.
+So $f$ is trivially associtative ( and commutative ).
+$\square$
+
+
+\section{Singletons as Semigroups}
+\subsection{Claim}
+Let $S$ be a singleton $\{x\}$.
+Let $f$ be the function $ f: S \times S \to S$.
+Then $(S,f)$ form a semigroup.
+\subsection{Proof}
+Since $S$ only has one elment, $f$ must be a constant map.
+Thus, from the prior exercise, $(S,f)$ forms a semigroup.
+$\square$	
+	
+\section{Symmetric Semigroup}
+\subsection{Claim}
+Let $X$ be any set.
+Let $\textbf{Symm}(X)$ be the set of all injections from $X$ to itself.
+With function composition as the binary operator, $\textbf{Symm}(X)$ forms a semigroup.
+\subsection{Proof}
+Each $f, g \in \textbf{Symm}(X)$ have the same image and domain - both of which are equal to $X$.
+So each $f$ is able to compose with any $g$ and vice versa.
+Thus one can freely associate with any elements in the $\textbf{Symm}(X)$ - it's function composition, trivially associative as it inherits it from the set theoretic relationship $\times$ operator.
+$\square$
+
+
+
+\end{document}
